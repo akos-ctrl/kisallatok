@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #cea18b;">
+    <header>
+    <div class="container">
+        <div class="row">
+            <div class="head col-sm-1"></div>
+            <div class="head col-sm-2"><button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Cirkusz<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#tort">Története</a></li>
+                  <li><a href="#jegyar">Jegyárak</a></li>
+                </ul></div>
+            <div class="head col-sm-2"><a href="#cont"><button type="button" class="btn btn-danger">Kapcsolat</button></a></div>
+            <div class="head col-sm-2"><a href="#aval"><button type="button" class="btn btn-danger">Elérhetőségek</button></a></div>
+            <div class="head col-sm-2"><a href="#fellep"><button type="button" class="btn btn-danger">Fellépők</button></a></div>
+            <div class="head col-sm-2"><a href="#gallery"><button type="button" class="btn btn-danger">Galléria</button></a></div>
+            <div class="head col-sm-1"></div>
+              </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="logo.jpg" style="width: 250px;height:auto;" class="rot">
+        </div>
+        <div class="col-sm-4 div"><div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="download.jpg" style="width: 360px;height: 750px;">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="images3.jpg" style="width: 360px;height: 750px;">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="images.jpg" style="width: 360px;height: 750px;">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="images1.jpg" style="width: 360px;height: 750px;">
+                <div class="text">Caption 4</div>
+              </div><div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="images2.jpg" style="width: 360px;height: 750px;">
+                <div class="text">Caption 5</div>
+              </div><div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="download1.jpg" style="width: 360px;height: 750px;">
+                <div class="text">Caption 6</div>
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>  
+              <span class="dot" onclick="currentSlide(4)"></span>  
+              <span class="dot" onclick="currentSlide(5)"></span>  
+              <span class="dot" onclick="currentSlide(6)"></span> 
+            </div></div>
+        <div class="col-sm-4"><img src="logo.jpg" style="width: 250px;height:auto;" class="rrot"></div>
+    </div>
+    <div class="row sdiv">
+        <div class="t col-sm-6" id="gallery"><img src="majd.jpg" class="ttr34"><img src="download.jpg" class="ttr34"></div>
+        <div class="t col-sm-6" id="jegyar"><p>Adult:465000Ft<br>Above 5:411270Ft<br>Under 5:106843Ft</p></div>
+    </div>
+    <div class="row sdiv">
+        <div class="t col-sm-3"><img src="Untitled.png" class="AVr34"></div>
+        <div class="t col-sm-6" id="tort"><p>A modern cirkusz 1769-ben született meg, Londonban,
+           amikor Philip Astleynek az az ötlete támadt, hogy néhány akrobatikus mutatvánnyal,
+            például erőművészekkel és kötéltáncosokkal együtt lovasgyakorlatokat mutassanak be egy lovaglóiskolában,
+             melyet tíz évvel később széksorokkal vett körül, és Astley Royal Amphiteator of Arts-nak nevezett el.</p></div>
+        <div class="t col-sm-3"><img src="majd.jpg" class="AVr34"></div>
+    </div>
+    <div class="row">
+        <div class="t col-sm-2" id="cont"><p>Tel.:06201234567<br>e-mail:Cirkus@gmail.com</p></div>
+        <div class="t col-sm-4" id="aval"><p>Tel.:06201234567<br>e-mail:Cirkus@gmail.com</p></div>
+        <div class="t col-sm-3" id="fellep">Bánki Jósef(31)<br>xìng xìng(18)<br>Wáng Wáng(94)</div>
+        <div class="t col-sm-3"><p>Facebook:Circus<br>Instagram:Cirkus<br>Douyin:Circus<br>XiaoHongShu:Cirkus</p></div>
+    </div>
+</div>
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>
